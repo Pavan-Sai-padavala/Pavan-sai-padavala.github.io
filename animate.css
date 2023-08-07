@@ -1,0 +1,96 @@
+@keyframes banner{
+    0% {
+        color:red;
+        transform: translateX(20%);
+      }
+    100% {
+        color:green;
+        transform: translateX(0%);
+    }
+}
+@keyframes banner2{
+    0% {
+        color:green;
+        transform: translateX(-40%);
+    }
+    100% {
+        color:red;
+        transform: translateX(0%);
+      }
+}
+.animie1{
+    animation-name:banner;
+    animation-duration: 3s;animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.animie2{
+    animation-name:banner2;
+    animation-duration:3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes colorChange {
+    from{color:black;background-color: white;}
+    to{color:black}
+    
+}
+#skill_container >:nth-child(2n){
+    animation-delay: 3s;
+}
+#skill_container >:nth-child(2n+1){
+    animation-delay: 6s;
+}
+#skill_container >*{
+    animation-name:colorChange;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes scalex{
+    0%{transform:scaleX(0.75)}
+    100%{transform:scaleX(1)}
+}
+#certifications >div{   
+     animation-name:scalex;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+} 
+@keyframes scale {
+    from{transform: scale3d(0.75,0.75,0.75);}
+    to{transform:scale3d(1,1,1);
+}
+    
+}
+.portfolio_container >:nth-child(2n){
+    animation-name:scale;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.portfolio_container >:nth-child(2n+1){
+    animation-name:scale;
+    animation-direction: alternate-reverse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes background {
+    0%{}
+    100%{background-color: black;color:white}
+}
+#Education > .Education_container{
+    animation-name:background;
+    transition-property: background;
+    
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+.projectTitle:hover{color:aquamarine}
+.project_Container:hover{background-color:rgb(27, 25, 25);}
